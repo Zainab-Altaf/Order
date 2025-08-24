@@ -1,0 +1,24 @@
+TABLE Orders (
+    OrderID NUMBER(5) PRIMARY KEY,
+    CustomerID NUMBER(5),
+    OrderDate DATE,
+    TotalAmount NUMBER(8,2)
+INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount)
+VALUES (201, 1, DATE '2025-08-20', 1250.00);
+CREATE
+INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount)
+VALUES (202, 2, DATE '2025-08-21', 750.00);
+INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount)
+VALUES (203, 3, DATE '2025-08-21', 1700.00)
+INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount)
+VALUES (204, 4, DATE '2025-08-22', 900.00);
+INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount)
+VALUES (205, 5, DATE '2025-08-23', 1500.00);
+ALTER TABLE Orders 
+ReNAME COLUMN CustomerID TO EmployeeID;
+ ALTER TABLE Orders
+ TRENAMEO Product;
+SELECT OrderID FROM Product ORDER BY OrderID DESC;
+DROP TABLE Product;
+FLASHBACK TABLE Product TO BEFORE DROP;
+SELECT * FROM Orders
